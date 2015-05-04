@@ -1,3 +1,3 @@
 class Job < ActiveRecord::Base
-  validates :title, :description, presence: true
+  validates :title, :description, :location, presence: true
 end
