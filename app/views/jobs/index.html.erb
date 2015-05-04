@@ -3,12 +3,19 @@
 
 <table>
 	<thead>
-		<th>Title</th>
-		<th>Description</th>
+		<tr>
+			<th>Title</th>
+			<th>Description</th>
+		</tr>
 	</thead>
 	<tbody>
 		<% @jobs.each do |job| %>
-		<tr><td><%= link_to job.title, job_path(job) %></td><td><%= job.description %></td></tr>
+		<tr>
+			<td><%= link_to job.title, job_path(job) %></td>
+			<td><%= job.description %></td>
+		</tr>
 		<% end %>
 	</tbody>
 </table>
+
+<%= datatables :jobs_source %>
