@@ -3,9 +3,9 @@
 
  <% if @job.errors.any? %>
 
-    <div id="error_explanation">
+    <div class="error">
 
-      <h2><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved</h2>
+      <h3><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved</h3>
 
     </div>
 
