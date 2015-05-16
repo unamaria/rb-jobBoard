@@ -1,11 +1,12 @@
 <h1>RailsBridgeCorp Open Jobs</h1>
 
 
-<table>
+<table id="jobs">
 	<thead>
 		<tr>
 			<th>Title</th>
 			<th>Description</th>
+			<th>Location</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -13,9 +14,8 @@
 		<tr>
 			<td><%= link_to job.title, job_path(job) %></td>
 			<td><%= job.description %></td>
+			<td><%= job.location %></td>
 		</tr>
 		<% end %>
 	</tbody>
 </table>
-
-<%= datatables :jobs_source %>

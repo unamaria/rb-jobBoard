@@ -36,9 +36,6 @@ class JobsController < ApplicationController
     redirect_to jobs_path
   end
 
-  datatables_source :jobs_source, :job, 
-    :columns => [:title, :description], :numResults => 10
-
   private
 
   def job_params
